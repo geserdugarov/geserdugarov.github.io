@@ -58,11 +58,9 @@ a#pdf:hover { background: #222; }
 #trigger2:checked + .unih  { display: block; }
 #trigger2 { display: none; }
 
-.skills-list {  }
-.skills-list ul { margin: 0; }
-.skills-list li { font-size: 152%; margin: 3px 0; padding: 3px 0; }
-.skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
-.talent { width: 32%; float: left }
+.skills { width: 32%; float: left; font-size: 122%; margin-top: -1em; }
+.skills li { margin-top: 1em; }
+.talent { width: 32%; float: left; }
 .talent h2 { margin-bottom: 6px; }
 
 span.auth { font-weight: bold; } /* text-decoration: underline; */
