@@ -58,8 +58,8 @@ a#pdf:hover { background: #222; }
 #trigger2:checked + .unih  { display: block; }
 #trigger2 { display: none; }
 
-.skills { width: 32%; float: left; font-size: 122%; margin-top: -1em; }
-.skills li { margin-top: 1em; }
+.skills { width: 32%; float: left; margin-top: -1em; }
+.skills li { margin-top: 1em; font-size: 122%; }
 .talent { width: 32%; float: left; }
 .talent h2 { margin-bottom: 6px; }
 
