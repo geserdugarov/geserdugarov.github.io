@@ -57,6 +57,8 @@ a#pdf:hover { background: #222; }
 #trigger { display: none; }
 #trigger2:checked + .unih  { display: block; }
 #trigger2 { display: none; }
+#trigger3:checked + .unih  { display: block; }
+#trigger3 { display: none; }
 
 .skills { width: 32%; float: left; margin-top: -1em; }
 .skills li { margin-top: 1em; font-size: 122%; }
@@ -66,6 +68,7 @@ a#pdf:hover { background: #222; }
 span.auth { font-weight: bold; } /* text-decoration: underline; */
 span.jour { font-style: italic; }
 span.abs  { font-style: italic; font-size: 90%; }
+span.book { font-style: italic; }
 
 #srt-ttab { margin-bottom: 100px; text-align: center;  }
 #srt-ttab img.last { margin-top: 20px }
