@@ -38,7 +38,7 @@ p.enlarge span { color: #000 }
 
 /* //-- section styles -- */
 
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 38px 6px 38px; margin-top: 6px; margin-bottom: 6px; text-decoration: none; text-align: right; }
+a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 38px 6px 38px; margin-top: 6px; margin-bottom: 6px; margin-right: 12px; text-decoration: none; text-align: right; }
 a#pdf:hover { background: #222; }
 
 .uni    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
