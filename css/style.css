@@ -56,6 +56,13 @@ a#pdf:hover { background: #222; }
 .unil h4 { position: absolute; top: 0.35em; right: 0 }
 .unil p  { margin: 0.5em 0 0.5em 0; }
 
+.uni-noR    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.uni-noR h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em; }
+.uni-noR p  { margin: 0.5em 0 0.5em 0; }
+.unil-noR    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
+.unil-noR h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em; }
+.unil-noR p  { margin: 0.5em 0 0.5em 0; }
+
 .unih    { display: none; position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: none; }
 #trigger:checked + .unih  { display: block; }
 #trigger { display: none; }
