@@ -63,7 +63,14 @@ a#pdf:hover { background: #222; }
 .unil-noR h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em; }
 .unil-noR p  { margin: 0.5em 0 0.5em 0; }
 
+.uniList    { position: relative; margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.uniList p  { margin: 0.7em 0 0.7em 0; }
+.uniBook    { position: relative; margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+.uniBook p  { margin: 0.5em -1em 0.5em 0; }
+
 .unih    { display: none; position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: none; }
+#trig_proj:checked + .unih  { display: block; }
+#trig_proj { display: none; }
 #trig_cert:checked + .unih  { display: block; }
 #trig_cert { display: none; }
 #trig_art:checked + .unih  { display: block; }
