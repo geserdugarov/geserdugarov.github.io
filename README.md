@@ -1,1 +1,1 @@
-It's a page with [my CV](https://geserdugarov.github.io/).
+It's a static web page with [my CV](https://geserdugarov.github.io/).
