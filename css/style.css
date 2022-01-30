@@ -22,6 +22,7 @@ body { font-family: Georgia; color: #444; }
 #hd h1 { font-size: 36px; letter-spacing: 3px; } /*text-transform: uppercase; */
 h2 { font-size: 152%; margin: 0; }
 h3, h4 { font-size: 122%;  }
+h5 { font-size: 105%;  }
 h1, h2, h3, h4, h5 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #d60000 }
@@ -45,10 +46,13 @@ a#pdf:hover { background: #222; }
 
 #spc {display: block; color: #f5f5f5; }
 
+.gap    { position: relative; margin-bottom: 0.5em; padding-bottom: 0.5em; border: none; }
+
 .uni    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .uni h2 { position: relative; margin-top: 0; margin-bottom: 0; margin-right: 10em; }
 .uni h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
 .uni h4 { position: absolute; top: 0.35em; right: 0 }
+.uni h5 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
 .uni p  { margin: 0.5em 0 0.5em 0; }
 
 .unil    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
@@ -68,7 +72,9 @@ a#pdf:hover { background: #222; }
 .uniBook    { position: relative; margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
 .uniBook p  { margin: 0.5em 0 0.5em 0; }
 
-.unih    { display: none; position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: none; }
+.unih    { display: none; position: relative; margin-bottom: 1em; padding-bottom: 0em; border-bottom: none; }
+#trig_exp1:checked + .unih  { display: block; }
+#trig_exp1 { display: none; }
 #trig_proj:checked + .unih  { display: block; }
 #trig_proj { display: none; }
 #trig_cert:checked + .unih  { display: block; }
