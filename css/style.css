@@ -46,7 +46,8 @@ a#pdf:hover { background: #222; }
 
 #spc {display: block; color: #f5f5f5; }
 
-.gap    { position: relative; margin-bottom: 0.5em; padding-bottom: 0.5em; border: none; }
+.gapbig    { position: relative; margin-bottom: 0.5em; padding-bottom: 0.5em; border: none; }
+.gap    { position: relative; margin-bottom: 0.2em; padding-bottom: 0.2em; border: none; }
 
 .uni    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .uni h2 { position: relative; margin-top: 0; margin-bottom: 0; margin-right: 10em; }
