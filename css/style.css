@@ -46,7 +46,8 @@ a#pdf:hover { background: #222; }
 
 #spc {display: block; color: #f5f5f5; }
 
-.gap    { position: relative; margin-bottom: 0.5em; padding-bottom: 0.5em; border: none; }
+.gapbig    { position: relative; margin-bottom: 0.5em; padding-bottom: 0.5em; border: none; }
+.gap    { position: relative; margin-bottom: 0.2em; padding-bottom: 0.2em; border: none; }
 
 .uni    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .uni h2 { position: relative; margin-top: 0; margin-bottom: 0; margin-right: 10em; }
@@ -56,8 +57,10 @@ a#pdf:hover { background: #222; }
 .uni p  { margin: 0.5em 0 0.5em 0; }
 
 .unil    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
+.unil h2 { position: relative; margin-top: 0; margin-bottom: 0; margin-right: 10em; }
 .unil h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
 .unil h4 { position: absolute; top: 0.35em; right: 0 }
+.unil h5 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
 .unil p  { margin: 0.5em 0 0.5em 0; }
 
 .uni-noR    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
