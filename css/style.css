@@ -20,9 +20,10 @@ body { font-family: Georgia; color: #444; }
 
 /* //-- core typography and style -- */
 #hd h1 { font-size: 36px; letter-spacing: 3px; } /*text-transform: uppercase; */
-h2 { font-size: 152%; margin: 0; }
-h3, h4 { font-size: 122%;  }
-h5 { font-size: 105%;  }
+/* position */   h2 { font-size: 152%; margin: 0; }
+/* company */    h3 { font-size: 122%;  }
+/* years */      h4 { font-size: 132%;  }
+/* additional */ h5 { font-size: 105%;  }
 h1, h2, h3, h4, h5 { color: #333; }
 p { font-size: 100%; line-height: 18px; padding-right: 3em; }
 a { color: #d60000 }
@@ -50,17 +51,17 @@ a#pdf:hover { background: #222; }
 .gap    { position: relative; margin-bottom: 0.2em; padding-bottom: 0.2em; border: none; }
 
 .uni    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
-.uni h2 { position: relative; margin-top: 0; margin-bottom: 0; margin-right: 10em; }
-.uni h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
-.uni h4 { position: absolute; top: 0.35em; right: 0 }
-.uni h5 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
+/* position */   .uni h2 { position: relative; margin-left: 19%; border: none; }
+/* company */    .uni h3 { position: relative; margin-left: 19%; margin-top: 0.5em; margin-bottom: 1em; border: none; }
+/* years */      .uni h4 { position: absolute; top: 0.5em; left: 3%; width: 13%; text-align: center; border: none; }
+/* additional */ .uni h5 { position: relative; margin-left: 19%; border: none; }
 .uni p  { margin: 0.5em 0 0.5em 0; }
 
 .unil    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
-.unil h2 { position: relative; margin-top: 0; margin-bottom: 0; margin-right: 10em; }
-.unil h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
-.unil h4 { position: absolute; top: 0.35em; right: 0 }
-.unil h5 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 10em; }
+/* position */   .unil h2 { position: relative; margin-left: 19%; border: none; }
+/* company */    .unil h3 { position: relative; margin-left: 19%; margin-top: 0.5em; margin-bottom: 1em; border: none; }
+/* years */      .unil h4 { position: absolute; top: 0.5em; left: 3%; width: 13%; text-align: center; border: none; }
+/* additional */ .unil h5 { position: relative; margin-left: 19%; border: none; }
 .unil p  { margin: 0.5em 0 0.5em 0; }
 
 .uni-noR    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
@@ -73,7 +74,7 @@ a#pdf:hover { background: #222; }
 .uniList    { position: relative; margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
 .uniList p  { margin: 0.7em 0 0.7em 0; }
 .uniBook    { position: relative; margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-.uniBook p  { margin: 0.5em 0 0.5em 0; }
+.uniBook p  { margin: 0.5em 0 0.5em 2%; }
 
 .unih    { display: none; position: relative; margin-bottom: 1em; padding-bottom: 0em; border-bottom: none; }
 #trig_exp1:checked + .unih  { display: block; }
