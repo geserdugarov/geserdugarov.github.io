@@ -51,18 +51,20 @@ a#pdf:hover { background: #222; }
 .gap    { position: relative; margin-bottom: 0.2em; padding-bottom: 0.2em; border: none; }
 
 .uni    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
+.unil    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
+
+.uni p  { margin: 0.5em 0 0.5em 0; }
+.unil p  { margin: 0.5em 0 0.5em 0; }
+
 /* position */   .uni h2 { position: relative; margin-left: 19%; border: none; }
 /* company */    .uni h3 { position: relative; margin-left: 19%; margin-top: 0.5em; margin-bottom: 1em; border: none; }
-/* years */      .uni h4 { position: absolute; top: 0.5em; left: 3%; width: 13%; text-align: center; border: none; }
+/* years */      .uni h4 { position: absolute; top: 0.5em; left: 0%; width: 17%; text-align: center; border: none; }
 /* additional */ .uni h5 { position: relative; margin-left: 19%; border: none; }
-.uni p  { margin: 0.5em 0 0.5em 0; }
 
-.unil    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
 /* position */   .unil h2 { position: relative; margin-left: 19%; border: none; }
 /* company */    .unil h3 { position: relative; margin-left: 19%; margin-top: 0.5em; margin-bottom: 1em; border: none; }
-/* years */      .unil h4 { position: absolute; top: 0.5em; left: 3%; width: 13%; text-align: center; border: none; }
+/* years */      .unil h4 { position: absolute; top: 0.5em; left: 0%; width: 17%; text-align: center; border: none; }
 /* additional */ .unil h5 { position: relative; margin-left: 19%; border: none; }
-.unil p  { margin: 0.5em 0 0.5em 0; }
 
 .uni-noR    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
 .uni-noR h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em; }
