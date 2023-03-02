@@ -1,3 +1,3 @@
-[CV static web page](https://geserdugarov.github.io/)
+[CV static](https://geserdugarov.github.io/) web page
 
-[Full list of publications](https://geserdugarov.github.io/publications.html)
+Full list of [publications](https://geserdugarov.github.io/publications.html)
