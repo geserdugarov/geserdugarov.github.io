@@ -1,4 +1,15 @@
-# temporary files
-*.bak
+# agents related
+.codex
+.codex-*
+.claude/*
+!.claude/skills/
+.develop-review-loop/
+
+# logs and temp
+logs/
+*.log
 *.tmp
-~$*
+*.bak
+.cache/
+tmp/
+
