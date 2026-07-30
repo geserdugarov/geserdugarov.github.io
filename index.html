@@ -23,8 +23,8 @@
                 <div class="yui-u first" style="padding-top:1.5em;">
                     <h1>Geser Dugarov, Ph.D.</h1>
                     <div class="gap"></div>
-                    <h2>Software Engineer,</h2>
-                    <h2>Big Data Engineer</h2>
+                    <h2>Software Engineer</h2>
+                    <h2>Distributed Data Systems & AI&nbsp;Data&nbsp;Infrastructure</h2>
                     
                     <div class="contact-info">
                         <h3>
@@ -87,7 +87,7 @@
                                 Building open-source tooling for agentic software development - 
                                 issue-driven orchestrators and develop-review loops that turn coding-agent CLIs into reproducible engineering pipelines.
                                 Extensive experience in research and data analysis; PhD.
-                                Strong interest in big data, distributed systems, and agentic development.
+				Strong interest in big data, distributed systems, performance engineering, and product-focused backend development.
                                 <!--Transitioned from fundamental research in oil & gas to developing distributed systems for big data processing.-->
                                 <!--Personal mission: "Living a balanced life. Helping professionals work smarter, not harder, by creating automated systems for their routines."-->
                             </p>
@@ -128,17 +128,17 @@
                             <ul class="skills">
                                 <li>Java</li>
                                 <li>Python</li>
-                                <li class="last">Rust (beginner)</li>
+                                <li class="last">Rust (some experience)</li>
                             </ul>
                             <ul class="skills">
                                 <li>Hudi / Lance</li>
 				<li>Spark / Flink / Ray</li>
-                                <li class="last">Vector search</li>
+                                <li class="last">Vector search / ANN indexing</li>
                             </ul>
                             <ul class="skills">
                                 <li>Distributed systems</li>
-                                <li>Agentic workflows</li>
-                                <li class="last">Claude Code / Codex</li>
+                                <li>LLM agent orchestration</li>
+				<li class="last">Multi-agent workflows</li>
                             </ul>
                         </div>
                     </div>
@@ -157,8 +157,7 @@
                                 <p>• Designed and implemented a distributed cache for Lance, pairing an in-memory L1 with a persistent L2
                                      on per-worker NVMe and prewarming IVF partitions to avoid repeated object-storage reads.</p>
                                 <p>• Building a distributed, incrementally updatable vector index for tens-of-billions-scale datasets, based on
-                                     <a href="https://github.com/marius-team/quake" target="_blank">Quake</a> query-adaptive ANN search, and driving its
-                                     <a href="https://github.com/geserdugarov/quake-rust" target="_blank">rewrite in Rust</a>.</p>
+                                     query-adaptive ANN search.
                                 <p>• Improved performance of Flink stream writing, decreasing processing time by 2x. </p>
                                 <p>• Reduced the platform's configuration burden by making sane Hudi defaults automatic for common scenarios.</p>
                                 <p>• Implemented partition-level TTL, enabling customers to automate cloud storage cost management with coarse granularity. </p>
@@ -192,8 +191,8 @@
                             <div class="uni">
                                 <h4>May 2026 - current</h4>
                                 <h2>Open-source contributor</h2>
-                                <h3>Lance ecosystem <br> &nbsp;</h3>
-                                <p>Contributions to the 
+                                <h3>Lance ecosystem</h3>
+                                <p>Rust contributions to the 
 				   <a href="https://github.com/lance-format/lance" target="_blank">Lance columnar format</a> and its distributed tooling.
                                    Lance is an open-source lakehouse format that unifies fast multimodal data access, indexing, and AI training.</p>
                                 <p>• 3&nbsp;<a href="https://github.com/lance-format/lance/pulls?q=is%3Apr+author%3Ageserdugarov+is%3Amerged" target="_blank">merged pull requests</a>
@@ -202,12 +201,12 @@
                             <div class="uni">
                                 <h4>Apr 2026 - current</h4>
                                 <h2>Open source: Agentic development tooling</h2>
-                                <h3>Personal projects <br> &nbsp;</h3>
-                                <p>Self-directed work on agent-augmented engineering workflows - treating coding-agent CLIs (Claude Code, Codex) 
-                                   as bounded executors inside reproducible pipelines.</p>
+                                <h3>Personal projects</h3>
+                                <p>Self-directed work on AI-powered developer tooling: multi-agent implementation and
+				   review workflows with human-in-the-loop handoff, reproducible execution, monitoring, and cost tracking.</p>
                                 <p>• <a href="https://github.com/geserdugarov/agent-orchestrator" target="_blank">agent-orchestrator</a>
-                                     - GitHub-Issue-driven workflow runner. Decomposes an issue, runs an implementer agent in an isolated git worktree, 
-                                     opens a PR, runs an independent reviewer agent, notifies a human when ready to merge.
+                                     - Python-based, GitHub-Issue-driven workflow runner. Decomposes an issue, runs an implementer agent 
+				     in an isolated git worktree, opens a PR, runs an independent reviewer agent, notifies a human when ready to merge.
                                      State persists in the issue itself. Eight releases from v0.1.0 (May 2026) to v0.8.0 (Jul 2026).
                                      Operator pause/continue controls, Postgres-backed usage and cost analytics, and an agent-trajectory viewer.</p>
                                 <p>• <a href="https://github.com/geserdugarov/agent-develop-review-loop" target="_blank">agent-develop-review-loop</a>
