@@ -133,12 +133,12 @@
                             <ul class="skills">
                                 <li>Hudi / Lance</li>
 				<li>Spark / Flink / Ray</li>
-                                <li class="last">Vector search / ANN indexing</li>
+                                <li class="last">vector search / ANN indexing</li>
                             </ul>
                             <ul class="skills">
-                                <li>Distributed systems</li>
+                                <li>distributed systems</li>
                                 <li>LLM agent orchestration</li>
-				<li class="last">Multi-agent workflows</li>
+				<li class="last">multi-agent workflows</li>
                             </ul>
                         </div>
                     </div>
@@ -150,46 +150,42 @@
                         </div>
                         <div class="yui-u">
                             <div class="uni">
-                                <h4>May 2023 - current (3+&nbsp;yrs)</h4>
+                                <h4>May 2023 - Present (3+&nbsp;yrs)</h4>
                                 <h2>Software Engineer / Big Data Engineer</h2>
                                 <h3><a href="https://www.huaweicloud.com/intl/en-us/" target="_blank">Huawei</a> <br> &nbsp;</h3>
-                                <p>Development of core functionality within Huawei Cloud for big data processing on enterprise-scale clusters. </p>
+                                <p>Development of core functionality within Huawei Cloud for big data processing on enterprise-scale clusters.</p>
                                 <p>• Designed and implemented a distributed cache for Lance, pairing an in-memory L1 with a persistent L2
                                      on per-worker NVMe and prewarming IVF partitions to avoid repeated object-storage reads.</p>
-                                <p>• Building a distributed, incrementally updatable vector index for tens-of-billions-scale datasets, based on
-                                     query-adaptive ANN search.
-                                <p>• Improved performance of Flink stream writing, decreasing processing time by 2x. </p>
+                                <p>• Building a distributed, incrementally updatable vector index for datasets containing tens of billions of vectors 
+                                     using query-adaptive ANN search.</p>
+                                <p>• Optimized Flink stream writing, halving processing time.</p>
                                 <p>• Reduced the platform's configuration burden by making sane Hudi defaults automatic for common scenarios.</p>
-                                <p>• Implemented partition-level TTL, enabling customers to automate cloud storage cost management with coarse granularity. </p>
+                                <p>• Implemented partition-level TTL, enabling customers to automate cloud storage cost management with coarse granularity.</p>
                             </div>
                             <div class="uni">
-                                <h4>Jan 2024 - current (2.5+&nbsp;yrs)</h4>
+                                <h4>Jan 2024 - Present (2.5+&nbsp;yrs)</h4>
                                 <h2>Apache Hudi Contributor</h2>
                                 <h3>The Apache Software Foundation <br> &nbsp;</h3>
                                 <p><a href="https://hudi.apache.org/" target="_blank">Apache Hudi</a> is a data lakehouse platform 
-                                   that brings database functionality to data lakes and enables incremental processing for low-latency analytics. </p>
-                                <p>• Optimized serialization and deserialization of records in Flink stream writing to Hudi table, 
-                                     resulting in a 30% increase in processing speed and 2x reduction in memory usage 
+                                   that brings database functionality to data lakes and enables incremental processing for low-latency analytics.</p>
+                                <p>• Optimized record serialization and deserialization in Flink stream writes to Hudi tables, 
+                                     improving processing speed by 30% and halving memory usage
                                      (<a href="https://github.com/apache/hudi/pull/12697" target="_blank">design doc</a>, 
                                      <a href="https://github.com/apache/hudi/pull/12796" target="_blank">main changes</a>). 
                                      Released in <a href="https://github.com/apache/hudi/releases/tag/release-1.0.2" target="_blank">Hudi&nbsp;1.0.2</a>.</p>
-                                <p>• Implemented 4 local optimizations 
+                                <p>• Implemented four targeted optimizations 
                                      (<a href="https://github.com/apache/hudi/pull/12054" target="_blank">[1]</a>, 
                                      <a href="https://github.com/apache/hudi/pull/12104" target="_blank">[2]</a>, 
                                      <a href="https://github.com/apache/hudi/pull/12113" target="_blank">[3]</a>, 
                                      <a href="https://github.com/apache/hudi/pull/12120" target="_blank">[4]</a>) 
-                                     resulting in a 10% increase in processing speed and 30% reduction in garbage collection overhead. 
+                                     improving processing speed by 10% and reducing garbage-collection overhead by 30%.
                                      Released in <a href="https://github.com/apache/hudi/releases/tag/release-1.0.1" target="_blank">Hudi&nbsp;1.0.1</a>.</p>
-                                <p>• Author of RFC-98, Spark Datasource V2 read
-                                     (<a href="https://github.com/apache/hudi/pull/13609" target="_blank">claim</a>,
-                                     <a href="https://github.com/apache/hudi/pull/18276" target="_blank">design doc</a>,
-                                     <a href="https://github.com/apache/hudi/pull/18277" target="_blank">COW implementation</a>).
-                                     The claim is merged, and the design and implementation are in review.</p>
-                                <p>• Contributed
+                                <p>• Author of RFC-98 for Spark DataSource V2 read support; the design and copy-on-write implementation are under review.</p>
+                                <p>• Authored
                                      50&nbsp;<a href="https://github.com/apache/hudi/pulls?q=is%3Apr+author%3Ageserdugarov+is%3Amerged" target="_blank">merged pull requests</a>.</p>
                             </div>
                             <div class="uni">
-                                <h4>May 2026 - current</h4>
+                                <h4>May 2026 - Present</h4>
                                 <h2>Open-source contributor</h2>
                                 <h3>Lance ecosystem</h3>
                                 <p>Rust contributions to the 
@@ -199,16 +195,18 @@
                                      in the vector-index build path, reducing memory use and cleaning up temporary resources in long-running index jobs.</p>
                             </div>
                             <div class="uni">
-                                <h4>Apr 2026 - current</h4>
-                                <h2>Open source: Agentic development tooling</h2>
+                                <h4>Apr 2026 - Present</h4>
+                                <h2>Open-source: Agentic Development Tooling</h2>
                                 <h3>Personal projects</h3>
                                 <p>Self-directed work on AI-powered developer tooling: multi-agent implementation and
 				   review workflows with human-in-the-loop handoff, reproducible execution, monitoring, and cost tracking.</p>
                                 <p>• <a href="https://github.com/geserdugarov/agent-orchestrator" target="_blank">agent-orchestrator</a>
-                                     - Python-based, GitHub-Issue-driven workflow runner. Decomposes an issue, runs an implementer agent 
+                                     - Python-based, GitHub issue-driven workflow runner. Decomposes an issue, runs an implementer agent 
 				     in an isolated git worktree, opens a PR, runs an independent reviewer agent, notifies a human when ready to merge.
                                      State persists in the issue itself. Eight releases from v0.1.0 (May 2026) to v0.8.0 (Jul 2026).
-                                     Operator pause/continue controls, Postgres-backed usage and cost analytics, and an agent-trajectory viewer.</p>
+                                     Operator pause/continue controls, Postgres-backed usage and cost analytics, and an agent-trajectory viewer.
+                                     Operational telemetry since May 2026: 5,100+ agent runs across 12 repositories, 
+                                     including 1,500+ reviewer-agent runs and an estimated $11k+ in API-equivalent LLM usage cost.</p>
                                 <p>• <a href="https://github.com/geserdugarov/agent-develop-review-loop" target="_blank">agent-develop-review-loop</a>
                                      - shell-only develop-review loop with HITL handoff, resumable runs, and cost telemetry parsed from agent usage metadata.</p>
                             </div>
@@ -216,14 +214,13 @@
                                 <h4>Feb 2022 – May 2023 (1+&nbsp;yr)</h4>
                                 <h2>Software Engineer / ML Engineer</h2>
                                 <h3>Digital Research (computer vision startup) <br> &nbsp;</h3>
-                                <p>• Designed and implemented an event-based architecture for a system for trucks monitoring. 
-                                Developed server-side image processing handling ~20,000 images per day. 
-                                In production, the system reduced fleet idle time by&nbsp;12%.</p>
+                                <p>• Designed an event-driven architecture and implemented the image-processing backend in Python for a truck-monitoring system 
+                                     handling ~20,000 images/day; in production, the system reduced fleet idle time by&nbsp;12%.</p>
                                 <p>• Built a customer-facing web UI featuring reports and data visualizations. 
                                 Also developed an internal web UI for system monitoring.</p>
                                 <!--<p>• Presented a <a href="https://aeroforest.ai" target="_blank">project</a> 
                                      of forest scanning by unmanned aerial vehicles (individual tree detection and species identification) 
-                                     to a range of foundations and potential customers. </p>-->
+                                     to a range of foundations and potential customers.</p>-->
                             </div>
                             <!--<div class="unil">
                                 <h4>2009 – 2022 (13&nbsp;yrs)</h4>
@@ -254,7 +251,7 @@
                                 <h2>ATAPY Software</h2>
                                 <h3>QA engineer</h3>
                                 <h4>XI/2008 – VIII/2009</h4>
-                                <p>Testing and identifying deficiencies in solutions for document imaging, data capture and processing. </p>
+                                <p>Testing and identifying deficiencies in solutions for document imaging, data capture and processing.</p>
                             </div>-->
                         </div>
                     </div>
@@ -269,7 +266,7 @@
                                 <h2>PhD, Geophysics</h2>
                                 <h3>Trofimuk Institute of Petroleum Geology and Geophysics SB RAS</h3>
                                 <!--<p>Thesis: Estimation of fractured medium effective parameters 
-                                   from seismic wave velocity and attenuation anisotropy data using the linear slip model. </p>-->
+                                   from seismic wave velocity and attenuation anisotropy data using the linear slip model.</p>-->
                             </div>
                             <div class="unil-noR">
                                 <!--<h4>2009</h4>-->
@@ -289,20 +286,20 @@
                         <div class="yui-u">
                             <div class="uni-noR">
                                 <h3>AVAZ inversion of local object anisotropy parameters from 3D seismic data </h3>
-                                <p>2020 – 2021 (2&nbsp;yrs) </p>
-                                <p>Role: <b>tech lead</b>. Team size: 7. Customer: NTC NIS-Naftagas, Serbia. </p>
+                                <p>2020 – 2021 (2&nbsp;yrs)</p>
+                                <p>Role: <b>tech lead</b>. Team size: 7. Customer: NTC NIS-Naftagas, Serbia.</p>
                                 <p>Technology and software for AVAZ inversion of target object anisotropy parameters from 3D seismic data was developed.
                                    Software was embedded as a plugin in Petrel (commonly used software for interpretation).
                                    The plugin also allows to process 3D seismic data.
-                                   It was important to integrate data processing and interpretation stages for undistorted local analysis. </p>
+                                   It was important to integrate data processing and interpretation stages for undistorted local analysis.</p>
                             </div>
                             <div class="unil-noR">
                                 <h3>Acoustic properties and internal structure of hydrate-bearing coal samples </h3>
-                                <p>2019 – 2021 (2&nbsp;yrs) </p>
+                                <p>2019 – 2021 (2&nbsp;yrs)</p>
                                 <p>Role: <b>head of the project</b>. Team size: 5. Supported by RSF,
-                                   grant No. <a href="https://rscf.ru/en/contests/search-projects/19-77-00068/" target="_blank">19-77-00068</a>. </p>
+                                   grant No. <a href="https://rscf.ru/en/contests/search-projects/19-77-00068/" target="_blank">19-77-00068</a>.</p>
                                 <p>In-situ 3D X-ray tomography, in addition to acoustic measurements, was used for analysis of hydrate-bearing coal samples.
-                                   A competitive sorption of methane and water in the coal pore space was revealed. </p>
+                                   A competitive sorption of methane and water in the coal pore space was revealed.</p>
                             </div>
                             <div class="gap"></div>
                             <label for="trig_proj"><a>>> [More projects]</a></label>
@@ -310,18 +307,18 @@
                             <div class="unih">
                                     <div class="uni-noR">
                                         <h3>Fractured media modelling using synthetic samples printed on a 3D printer </h3>
-                                        <p>2019 – 2021 (3&nbsp;yrs) </p>
-                                        <p>Role: <b>head of the project</b>. Team size: 4. Supported by RFBR, grant No. 19-05-00730. </p>
+                                        <p>2019 – 2021 (3&nbsp;yrs)</p>
+                                        <p>Role: <b>head of the project</b>. Team size: 4. Supported by RFBR, grant No. 19-05-00730.</p>
                                         <p>FDM and SLA methods of 3D printing were tested for the task of fractured media modelling.
-                                           Irregularity of internal structure filling has led to acoustic heterogeneity of the formed samples. </p>
+                                           Irregularity of internal structure filling has led to acoustic heterogeneity of the formed samples.</p>
                                     </div>
                                     
                                     <div class="unil-noR">
                                         <h3>Laboratory experiments on the formation of gas hydrates in coal samples </h3>
-                                        <p>2017 – 2018 (2&nbsp;yrs) </p>
-                                        <p>Role: <b>head of the project</b>. Team size: 4. Supported by RFBR, grant No. 17-35-80023. </p>
+                                        <p>2017 – 2018 (2&nbsp;yrs)</p>
+                                        <p>Role: <b>head of the project</b>. Team size: 4. Supported by RFBR, grant No. 17-35-80023.</p>
                                         <p>Experiments on formation of methane hydrate in crashed bituminous coal samples.
-                                           As a result, the methodology of gas hydrate formation in coal samples was developed. </p>
+                                           As a result, the methodology of gas hydrate formation in coal samples was developed.</p>
                                     </div>                                    
                             </div>
                         </div>
@@ -375,31 +372,31 @@
                                 <p>Drobchik A.N., Nikitin V.V., Fokin M.I., <span class="auth">Dugarov G.A.</span>, Shevchenko P.D., Deriy A.L., Manakov A.Yu., Kuper K.E., and Duchkov A.A.
                                    (<a href="https://doi.org/10.1107/S1600577521013308" target="_blank">2022</a>)
                                    Environmental cell for in situ X-ray synchrotron micro-CT imaging with simultaneous acoustic measurements.
-                                   <span class="jour">Journal of Synchrotron Radiation</span>, 29(2), 515-521. </p>
+                                   <span class="jour">Journal of Synchrotron Radiation</span>, 29(2), 515-521.</p>
                             </div>
                             <div class="uniList">
                                 <p><span class="auth">Dugarov G.A.</span>, Duchkov A.A., and Manakov A.Yu.
                                    (<a href="https://doi.org/10.1190/geo2020-0117.1" target="_blank">2021</a>)
                                    Acoustic properties of hydrate-bearing coal samples depending on temperature and water saturation type.
-                                   <span class="jour">Geophysics</span>, 86(3), U31-U37. </p>
+                                   <span class="jour">Geophysics</span>, 86(3), U31-U37.</p>
                             </div>
                             <div class="uniList">
                                 <p>Nikitin V.V., Fokin M.I., <span class="auth">Dugarov G.A.</span>, Drobchik A.N., de Andrade V., Shevchenko P.D., Manakov A.Yu., and Duchkov A.A.
                                    (<a href="https://doi.org/10.1016/j.fuel.2021.120699" target="_blank">2021</a>)
                                    Dynamic in situ imaging of methane hydrate formation in coal media.
-                                   <span class="jour">Fuel</span>, 298, 120699. </p>
+                                   <span class="jour">Fuel</span>, 298, 120699.</p>
                             </div>
                             <div class="uniList">
                                 <p>Nikitin V.V., <span class="auth">Dugarov G.A.</span>, Duchkov A.A., Fokin M.I., Drobchik A.N., Shevchenko P.D., de Carlo F., and Mokso R.
                                    (<a href="https://doi.org/10.1016/j.marpetgeo.2020.104234" target="_blank">2020</a>)
                                    Dynamic in-situ imaging of methane hydrate formation and self-preservation.
-                                   <span class="jour">Marine and Petroleum Geology</span>, 115, 104234. </p>
+                                   <span class="jour">Marine and Petroleum Geology</span>, 115, 104234.</p>
                             </div>
                             <div class="uniList">
                                 <p><span class="auth">Dugarov G.A.</span>, Duchkov A.A., Duchkov A.D., and Drobchik A.N.
                                    (<a href="https://doi.org/10.1016/j.jngse.2019.01.007" target="_blank">2019</a>)
                                    Laboratory validation of effective acoustic velocity models for samples bearing hydrates of different type.
-                                   <span class="jour">Journal of Natural Gas Science and Engineering</span>, 63, 38-46. </p>
+                                   <span class="jour">Journal of Natural Gas Science and Engineering</span>, 63, 38-46.</p>
                             </div>
                         </div>
                     </div> -->
@@ -413,11 +410,11 @@
                         <div class="yui-u">
                             <div class="unil">
                                 <p>• Deep Learning Specialization, Coursera
-                                     (<a href="https://www.coursera.org/account/accomplishments/specialization/RDPKYCN2LW6A" target="_blank">2021</a>) </p>
+                                     (<a href="https://www.coursera.org/account/accomplishments/specialization/RDPKYCN2LW6A" target="_blank">2021</a>)</p>
                             </div>
                             <!--<div class="gap"></div>
                             <div class="unil">
-                                <p>• Machine Learning, Coursera (2021) </p>
+                                <p>• Machine Learning, Coursera (2021)</p>
                             </div>-->
                             <!--
                             <label for="trig_cert"><a>>> [More certificates]</a></label>
@@ -441,11 +438,11 @@
                             <div class="unil">
                                 <p>• Software for solving nonstationary thermohydraulic problem applied to reactors and experimental stands
                                      with sodium, lead and lead-bismuth coolants. Version 1.1. HYDRA-IBRAE/LM/V1.1
-                                     (<a href="file/copyrights_2018616815.pdf" target="_blank">2018</a>) </p>
+                                     (<a href="file/copyrights_2018616815.pdf" target="_blank">2018</a>)</p>
                             </div>
                             <!--<div class="unil">
                                 <p>• Module for fast reactor core destruction of complex universal code. Version 1.0
-                                     (<a href="file/copyrights_2017660167.pdf" target="_blank">2017</a>) </p>
+                                     (<a href="file/copyrights_2017660167.pdf" target="_blank">2017</a>)</p>
                             </div>-->
                         </div>
                     </div>
@@ -458,44 +455,44 @@
                         
                         <div class="yui-u">
                             <div class="unil">
-                                <p>• Going to the gym on a regular basis (since 2019). </p>
+                                <p>• Going to the gym on a regular basis (since 2019).</p>
                             </div>
                             <div class="gap"></div>
                             <div class="unil">
-                                <p>• Reading developmental psychology and business management books. </p>
+                                <p>• Reading developmental psychology and business management books.</p>
                             </div>
                             <label for="trig_book"><a>>> [Favourites]</a></label>
                             <input id="trig_book" type="checkbox">
                             <div class="unih">
                                 <div class="uniBook">
                                     <p>- Meg Jay
-                                         <span class="book">"The Defining Decade<!--: Why Your Twenties Matter And How to Make the Most of Them Now-->"</span> </p>
+                                         <span class="book">"The Defining Decade<!--: Why Your Twenties Matter And How to Make the Most of Them Now-->"</span></p>
                                 </div>
                                 <div class="uniBook">
                                     <p>- Tom DeMarco
-                                         <span class="book">"The Deadline: A Novel about Project Management"</span> </p>
+                                         <span class="book">"The Deadline: A Novel about Project Management"</span></p>
                                 </div>
                                 <div class="uniBook">
                                     <p>- Alexey Markov
                                          <span class="book">"Hoolinomics"</span> and
-                                         <span class="book">"Greedology"</span> [in Russian] </p>
+                                         <span class="book">"Greedology"</span> [in Russian]</p>
                                 </div>
                                 <div class="uniBook">
                                     <p>- Eliyahu Goldratt, and Jeff Cox
-                                         <span class="book">"The Goal: A Process of Ongoing Improvement"</span> </p>
+                                         <span class="book">"The Goal: A Process of Ongoing Improvement"</span></p>
                                 </div>
                                 <!--
                                 <div class="uniBook">
                                     <p>- Nassim Taleb
-                                         <span class="book">"Fooled by Randomness: The Hidden Role of Chance in Life And in the Markets"</span>. </p>
+                                         <span class="book">"Fooled by Randomness: The Hidden Role of Chance in Life And in the Markets"</span>.</p>
                                 </div>
                                 <div class="uniBook">
                                     <p>- Carol Dweck
-                                         <span class="book">"Mindset: The New Psychology of Success"</span>. </p>
+                                         <span class="book">"Mindset: The New Psychology of Success"</span>.</p>
                                 </div>
                                 <div class="uniBook">
                                     <p>- Stephen Covey
-                                         <span class="book">"The 7 Habits of Highly Effective People"</span>. </p>
+                                         <span class="book">"The 7 Habits of Highly Effective People"</span>.</p>
                                 </div>-->
                             </div>
                         </div>
@@ -507,12 +504,10 @@
         </div><!--// bd -->
 
         <div id="ft">
-            <p>
-                <a href="mailto:geserdugarov@gmail.com">geserdugarov@gmail.com</a> &mdash;
-                <a href="https://t.me/GeserDugarov" target="_blank">message to Telegram</a> &mdash;
-                <a href="http://www.linkedin.com/in/geserdugarov/" target="_blank">LinkedIn profile</a> &mdash;
-                <a href="https://github.com/geserdugarov" target="_blank">GitHub</a>
-            </p>
+            <p><a href="mailto:geserdugarov@gmail.com">geserdugarov@gmail.com</a> &mdash;
+               <a href="https://t.me/GeserDugarov" target="_blank">message to Telegram</a> &mdash;
+               <a href="http://www.linkedin.com/in/geserdugarov/" target="_blank">LinkedIn profile</a> &mdash;
+               <a href="https://github.com/geserdugarov" target="_blank">GitHub</a></p>
         </div><!--// footer -->
 
     </div><!-- // inner -->
