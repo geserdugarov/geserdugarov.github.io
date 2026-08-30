@@ -5,11 +5,11 @@
     <title>Geser Dugarov, PhD | Distributed Data Systems &amp; AI Data Infrastructure</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    <meta name="keywords" content="Java, Python, Rust, PostgreSQL, Apache Hudi, Lance, Apache Spark,
-                                   Apache Flink, Ray, vector search, ANN indexing, distributed systems,
-                                   performance engineering, LLM agent orchestration, multi-agent workflows" />
-    <meta name="description" content="Software engineer building petabyte-scale lakehouse and AI data infrastructure,
-                                      with upstream contributions to Apache Hudi and Lance." />
+    <meta name="keywords" content="Java, Python, SQL, Scala, PostgreSQL, Parquet, Apache Hudi, Apache Spark,
+                                   Apache Flink, Lance, Ray, distributed caching, vector search, ANN indexing,
+                                   performance engineering, Codex, Claude Code, multi-agent orchestration" />
+    <meta name="description" content="Software engineer building petabyte-scale lakehouse and AI data infrastructure at Huawei Cloud,
+                                      with 50 merged Apache Hudi PRs and three merged Lance PRs." />
 
     <link rel="stylesheet" type="text/css" href="css/reset-fonts-grids.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
@@ -37,20 +37,20 @@
                                     <th>Email:</th>
                                     <th><a href="mailto:geserdugarov@gmail.com">geserdugarov@gmail.com</a></th>
                                   </tr>
-                                  <!--<tr>
-                                    <td>Location:</td>
-                                    <td>...</td>
-                                  </tr>-->
-                                  <!--<tr>
-                                    <td>Languages:</td>
-                                    <td>English (advanced), Russian (native)</td>
-                                  </tr>-->
                                   <tr>
                                     <td>Profiles:</td>
                                     <td><a href="https://www.linkedin.com/in/geserdugarov/"
                                            target="_blank">LinkedIn</a>,
                                         <a href="https://github.com/geserdugarov"
                                            target="_blank">GitHub</a></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Location:</td>
+                                    <td>Novosibirsk, Russia | Open to relocation</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Languages:</td>
+                                    <td>English (advanced), Russian (native)</td>
                                   </tr>
                             </table>
                         </h3>
@@ -83,19 +83,21 @@
                         </div>
                         <div class="yui-u">
                             <p class="enlarge">
-                                Software engineer building petabyte-scale lakehouse and AI data infrastructure at Huawei.
-                                As part of my Huawei role, I designed and implemented a two-tier distributed cache for Lance
-                                and I am currently developing a query-adaptive ANN index targeting tens of billions of vectors.
-                                I also authored
+                                Software engineer building petabyte-scale lakehouse and AI data infrastructure at Huawei Cloud,
+                                with ownership from technical design through implementation, benchmarking, and production hardening.
+                                Author of
                                 <a href="https://github.com/apache/hudi/pulls?q=is%3Apr+author%3Ageserdugarov+is%3Amerged"
-                                   target="_blank">50 merged PRs</a>
-                                to Apache Hudi and
+                                   target="_blank">50 merged</a>
+                                Apache Hudi PRs and
                                 <a href="https://github.com/lance-format/lance/pulls?q=is%3Apr+author%3Ageserdugarov+is%3Amerged"
-                                   target="_blank">three</a>
-                                to Lance.
-                                Research background informs an evidence-driven approach to system design, benchmarking, and performance validation.
-                                Separately, I create independent open-source agentic software-development tooling for reproducible issue-to-PR
-                                and develop–review workflows with human-in-the-loop (HITL) handoff, monitoring, and cost telemetry.
+                                   target="_blank">three merged</a>
+                                Lance PRs; the Flink work reduced end-to-end TPC-H write time by up to 26% and inter-operator
+                                data transfer by 29&ndash;36%. Current work includes a two-tier distributed cache for Lance/Ray
+                                and a query-adaptive, incrementally updatable ANN index targeting tens of billions of vectors.
+                                Creator and operator of open-source
+                                <a href="https://github.com/geserdugarov/agent-orchestrator/"
+                                   target="_blank">AI developer tooling</a>,
+                                with 6,700+ agent runs recorded across 14 repositories.
                             </p>
                             <!--<div class="gapbig"></div>-->
                             <!--Personal mission: "Living a balanced life. Helping professionals work smarter, not harder, by creating automated systems for their routines."-->
@@ -162,19 +164,30 @@
                         <div class="yui-u">
                             <p class="medium">
                                 <strong>Languages:</strong>
-                                Java, Python, SQL; Rust (working knowledge)
+                                Java, Python, SQL; Scala (working knowledge)
                             </p>
                             <div class="gapbig"></div>
                             <p class="medium">
-                                <strong>Data and retrieval:</strong>
-                                Distributed systems, performance engineering, PostgreSQL, Apache Hudi, Lance,
-                                Apache Spark, Apache Flink, Ray, vector search and ANN indexing
+                                <strong>Distributed data and retrieval:</strong>
+                                Apache Hudi, Apache Spark, Apache Flink, Lance, Ray, PostgreSQL, Parquet;
+                                lakehouse internals, distributed caching, vector search and ANN
                             </p>
                             <div class="gapbig"></div>
                             <p class="medium">
-                                <strong>Agent systems:</strong>
-                                Multi-agent orchestration, tool-use and HITL workflows, state and recovery management,
-                                trajectory tracing, token/cost analytics, credential isolation
+                                <strong>Performance and reliability:</strong>
+                                Serialization, checkpointing, partitioning/load balancing, profiling, memory/GC optimization,
+                                TPC-H benchmarking, monitoring
+                            </p>
+                            <div class="gapbig"></div>
+                            <p class="medium">
+                                <strong>AI developer tooling:</strong>
+                                Codex, Claude Code, multi-agent orchestration, human-in-the-loop (HITL) workflows,
+                                durable state/recovery, trajectory tracing, cost analytics
+                            </p>
+                            <div class="gapbig"></div>
+                            <p class="medium">
+                                <strong>Engineering delivery:</strong>
+                                Technical designs/RFCs, automated testing, CI/release engineering, Maven, Docker, Linux
                             </p>
                         </div>
                     </div>
@@ -191,51 +204,60 @@
                                 <a href="https://www.huaweicloud.com/intl/en-us/"
                                    target="_blank">Huawei</a>
                             </h3>
-                            <p>Develop core lakehouse and AI data infrastructure for Huawei Cloud.</p>
-                            <p>• Designed and implemented a two-tier distributed cache; currently developing a query-adaptive
-                                 ANN index targeting tens of billions of vectors; authored
+                            <p>Develop core lakehouse, distributed data, and AI retrieval infrastructure for Huawei Cloud;
+                                 support teammates through code and RFC reviews and technical tutorials.</p>
+                            <p>• Designed and implemented a two-tier distributed cache for Lance vector indices with an in-memory L1,
+                                 persistent per-worker NVMe L2, and IVF-partition prewarming and routing; integrated it with Ray
+                                 and benchmarked it on a real cluster.</p>
+                            <p>• Developing a distributed, incrementally updatable, query-adaptive ANN index targeting tens of billions of vectors; authored
                                  <a href="https://github.com/lance-format/lance/pulls?q=is%3Apr+author%3Ageserdugarov+is%3Amerged"
-                                    target="_blank">three merged Rust PRs</a>
-                                 improving memory bounds and resource lifecycle in index-build jobs.</p>
-                            <p>• Apache Hudi: Simplified setup of 900+ configuration parameters with recommended defaults for common scenarios
-                                 and implemented partition-level TTL.</p>
-                            <div class="gap"></div>
-                            <p><strong>Huawei-sponsored upstream contributions</strong></p>
-                            <p><strong>Apache Hudi</strong> &ndash;
-                                    <a href="https://github.com/apache/hudi/pulls?q=is%3Apr+author%3Ageserdugarov+is%3Amerged"
-                                       target="_blank">50 merged PRs</a>
-                                (delivered as part of the Huawei role)
-                            </p>
-                            <p>• Optimized serialization of Flink stream records in Hudi, cutting end-to-end write time by up to 26%
-                                 and reducing data transferred between operators by 29&ndash;36% in TPC-H benchmarks
-                                 (<a href="https://github.com/apache/hudi/pull/12697"
-                                     target="_blank">design doc</a>,
-                                  <a href="https://github.com/apache/hudi/pull/12796"
-                                     target="_blank">main changes</a>).
-                                 Released in
+                                    target="_blank">three merged</a>
+                                 upstream Lance PRs that bounded IVF-training memory and fixed temporary-resource lifecycle issues,
+								 and helped resolve an out-of-memory problem in a three-billion-vector workload.</p>
+                            <p>• Across
+                                 <a href="https://github.com/apache/hudi/pulls?q=is%3Apr+author%3Ageserdugarov+is%3Amerged"
+                                    target="_blank">50 merged</a>
+                                 Apache Hudi PRs, authored
+                                 <a href="https://github.com/apache/hudi/pull/12697"
+                                    target="_blank">RFC-84</a>
+                                 and implemented its
+                                 <a href="https://github.com/apache/hudi/pull/12796"
+                                    target="_blank">Flink serialization redesign</a>,
+                                 cutting TPC-H write time by up to 26% and inter-operator data transfer by 29&ndash;36%; released in
                                  <a href="https://github.com/apache/hudi/releases/tag/release-1.0.2"
                                     target="_blank">Hudi&nbsp;1.0.2</a>.</p>
-                            <p>• Implemented four targeted optimizations
+                            <p>• Four additional Flink optimizations
                                  (<a href="https://github.com/apache/hudi/pull/12054"
-                                     target="_blank">#12054</a>,
+                                     target="_blank">[1]</a>,
                                   <a href="https://github.com/apache/hudi/pull/12104"
-                                     target="_blank">#12104</a>,
+                                     target="_blank">[2]</a>,
                                   <a href="https://github.com/apache/hudi/pull/12113"
-                                     target="_blank">#12113</a>,
+                                     target="_blank">[3]</a>, and
                                   <a href="https://github.com/apache/hudi/pull/12120"
-                                     target="_blank">#12120</a>),
-                                 improving Flink stream-write throughput by 10% and reducing garbage-collection overhead by 30% in internal benchmarks.
-                                 Released in
+                                     target="_blank">[4]</a>)
+                                 improved throughput by 10% and reduced GC overhead by 30%; released in
                                  <a href="https://github.com/apache/hudi/releases/tag/release-1.0.1"
                                     target="_blank">Hudi&nbsp;1.0.1</a>.</p>
+                            <p>• Diagnosed serial buffer flushing during Flink checkpoints, contributing to a fix that improved
+                                 checkpoint performance 7&times;; corrected writer load balancing and timestamp, CDC-merge,
+                                 and cross-engine record-key defects.</p>
+                            <p>• Simplified setup across 900+ Hudi configuration parameters; designed and implemented partition-level TTL
+                                 for automated retention and storage-cost control, supported by automated tests and a 100,000-partition load test.</p>
+                            <p>• Drove Hudi&rsquo;s Spark DataSource V2 migration; authored
+                                 <a href="https://github.com/apache/hudi/pull/18276"
+                                    target="_blank">RFC-98</a>
+                                 and an initial Copy-on-Write
+                                 <a href="https://github.com/apache/hudi/pull/18277"
+                                    target="_blank">read path</a>
+                                 to enable additional query pushdowns.</p>
                             </div>
                             <div class="unil">
                                 <h4>Feb 2022 &ndash; May 2023</h4>
                                 <h2>Software Engineer / ML Engineer</h2>
                                 <h3>Digital Research (computer vision startup)</h3>
-                                <p>• Designed an event-driven architecture and implemented the image-processing backend in Python for a truck-monitoring system
-                                     handling ~20,000 images/day; in production, the system reduced fleet idle time by&nbsp;12%.</p>
-                                <p>• Built a customer-facing reporting and data-visualization UI and an internal monitoring UI.</p>
+                                <p>• Designed the event-driven Python backend for a production truck-monitoring system processing
+                                     ~20,000 images per day; the deployed system reduced fleet idle time by 12%. Also delivered
+                                     customer reporting/data-visualization and internal monitoring interfaces.</p>
                                 <!--<p>• Presented a <a href="https://aeroforest.ai"
                                                         target="_blank">project</a>
                                      of forest scanning by unmanned aerial vehicles (individual tree detection and species identification)
@@ -279,25 +301,20 @@
 
                     <div class="yui-gf">
                         <div class="yui-u first">
-                            <h2>Independent personal projects</h2>
+                            <h2>Open-source engineering</h2>
                         </div>
                         <div class="yui-u">
                             <div class="unil">
                                 <p class="enlarge">
-                                    Agentic Development Tooling &ndash; Started Apr 2026
+                                    <a href="https://github.com/geserdugarov/agent-orchestrator/"
+                                       target="_blank">Agent Orchestrator</a>
+                                    &ndash; Creator &amp; Maintainer | Apr 2026 &ndash; Present
                                 </p>
-                                <p>Creator and maintainer of AI-powered developer tooling for reproducible multi-agent implementation and review,
-                                   human-in-the-loop handoff, monitoring, and cost tracking.</p>
-                                <p>• Workflow orchestration: Built
-                                     <a href="https://github.com/geserdugarov/agent-orchestrator"
-                                        target="_blank">agent-orchestrator</a>,
-                                     a Python-based runner that turns a GitHub issue into an isolated implementation workflow: it launches an implementer agent,
-                                     opens a PR, invokes an independent review agent, and notifies a human when the PR is ready to merge.</p>
-                                <p>• Product delivery: Shipped eleven releases from v0.1.0 to v0.10.1 between May and August 2026,
-                                     adding GitHub-persisted workflow state, pause/resume controls, PostgreSQL-backed usage and cost analytics,
-                                     trajectory and provenance observability, namespaced workflow labels, and hardened recovery.</p>
-                                <p>• Operational scale: Recorded 6,700+ agent runs across 14 repositories since May 2026, including 2,000+ review-agent runs &ndash;
-                                     equivalent to $19K+ at API list prices.</p>
+                                <p>• Designed and shipped a Python issue-to-PR platform that orchestrates isolated implementation,
+                                     automated validation, independent review, and human-controlled merge using Codex and Claude Code.</p>
+                                <p>• Built durable GitHub-persisted workflow state, pause/resume and recovery, credential isolation,
+                                     audit/trajectory logging, and PostgreSQL cost analytics. Shipped 12 releases through v0.11.0
+                                     and recorded 6,700+ agent runs across 14 repositories, including 2,000+ independent review-agent runs.</p>
                             </div>
                         </div>
                     </div>
