@@ -1,111 +1,230 @@
+/* ============================================================================
+   Geser Dugarov -- personal CV site.
 
-.msg { padding: 10px; background: #222; position: relative; }
-.msg h1 { color: #fff;  }
-.msg a { margin-left: 20px; background: #408814; color: white; padding: 4px 8px; text-decoration: none; }
-.msg a:hover { background: #266400; }
+   Sections below, in order:
+     1. Reset      -- flattens browser defaults
+     2. Theme      -- colours and sizes, all in one place
+     3. Page       -- outer frame: header, main, footer
+     4. Sections   -- "Experience", "Education", ... : a title next to a body
+     5. Entries    -- one job, degree, award or publication inside a section
+     6. Text       -- headings, paragraphs, links, inline spans
+     7. Toggles    -- "show more" blocks, driven by a hidden checkbox
+     8. Helpers    -- spacers and small one-off pieces
+     9. Small screens
+   ========================================================================= */
 
-/* //-- yui-grids style overrides -- */
-body { font-family: Georgia; color: #444; }
-#inner { padding: 10px 80px; margin: 80px auto; background: #f5f5f5; border: solid #666; border-width: 8px 0 2px 0; }
-.yui-gf { margin-bottom: 2em; padding-bottom: 2em; border-bottom: 1px solid #ccc; }
 
-/* //-- header, body, footer -- */
-#hd { margin: 0.5em 0 3em 0; padding-bottom: 1.5em; border-bottom: 1px solid #ccc }
-#hd h2 { letter-spacing: 1px; text-transform: uppercase; margin: 0.5em 0 0.5em 0; }
-#bd, #ft { margin-bottom: 2em; }
+/* 1. Reset ================================================================ */
 
-/* //-- footer -- */
-#ft { padding: 0 0 5em 0; font-size: 92%; border-top: 0; text-align: center; }
-#ft p { margin-bottom: 0; text-align: center;   }
+*,
+*::before,
+*::after { box-sizing: border-box; }
 
-/* //-- core typography and style -- */
-#hd h1 { font-size: 34px; letter-spacing: 3px; } /*text-transform: uppercase; */
-/* position */   h2 { font-size: 152%; margin: 0; }
-/* company */    h3 { font-size: 122%;  }
-/* years */      h4 { font-size: 132%;  }
-/* additional */ h5 { font-size: 105%;  }
-h1, h2, h3, h4, h5 { color: #333; }
+body, h1, h2, h3, h4, h5, h6,
+p, ul, ol, li, figure, table, td, th { margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+ul, ol { list-style: none; }
+
+table { border-collapse: collapse; }
+
+img { max-width: 100%; }
+
+
+/* 2. Theme ================================================================ */
+
+:root {
+    --text:        #444;
+    --heading:     #333;
+    --link:        #d60000;
+    --line:        #ccc;      /* thin separators between sections and entries */
+    --paper:       #f5f5f5;   /* background of the sheet the CV sits on */
+    --frame:       #666;      /* sheet border and button background */
+
+    --page-width:  950px;
+    --page-margin: 80px;      /* space around the sheet, and inside it */
+
+    /* A dated entry keeps its <h4> date in a column on the left. */
+    --date-width:  17%;
+    --date-gutter: 19%;
+}
+
+
+/* 3. Page ================================================================= */
+
+body {
+    background: #fff;
+    color: var(--text);
+    font: 13px/1.25 Georgia, serif;
+}
+
+.page {
+    max-width: var(--page-width);
+    margin: var(--page-margin) auto;
+    padding: 10px var(--page-margin);
+    background: var(--paper);
+    border-top: 8px solid var(--frame);
+    border-bottom: 2px solid var(--frame);
+}
+
+.page-header {
+    margin: 0.5em 0 3em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--line);
+}
+
+.page-header h1 { font-size: 34px; letter-spacing: 3px; }
+.page-header h2 { margin: 0.5em 0; letter-spacing: 1px; text-transform: uppercase; }
+
+/* Name and contacts on the left, photo on the right. */
+.profile { display: flex; gap: 2%; align-items: flex-start; }
+.profile-details { flex: 1; min-width: 0; padding-top: 1.5em; }
+.profile-photo { flex: 0 0 32%; }
+.profile-photo img { width: 12em; }
+
+.contact-info { margin-top: 7px; color: var(--heading); font-size: 122%; }
+.contact-info table { width: 100%; }
+.contact-info td { padding: 3px 0; text-align: left; }
+
+main { margin-bottom: 2em; }
+
+.page-footer {
+    margin-bottom: 2em;
+    padding-bottom: 5em;
+    font-size: 92%;
+    text-align: center;
+}
+
+
+/* 4. Sections ============================================================= */
+
+/* Title column and body column side by side, separated from the next section
+   by a thin line. */
+.section {
+    display: flex;
+    gap: 7.5%;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--line);
+}
+
+.section-title { flex: 0 0 12.3%; }
+.section-body { flex: 1; min-width: 0; display: flow-root; }
+
+
+/* 5. Entries ============================================================== */
+
+/* One item of a section: a job, a degree, a certificate. */
+.entry { position: relative; }
+.entry p { margin: 0.5em 0; }
+.entry h3 { margin: 0.5em 0; }
+
+/* Add a line below the entry, to set it apart from the entry that follows. */
+.entry.divided {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Move the entry's <h4> dates into a column left of the rest of the text. */
+.entry.dated h2,
+.entry.dated h3,
+.entry.dated h5 { margin-left: var(--date-gutter); }
+.entry.dated h3 { margin-bottom: 1em; }
+.entry.dated h4 {
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    width: var(--date-width);
+    text-align: center;
+}
+
+/* Indent the entry, for nested items such as a list of book titles. */
+.entry.indented p { margin-left: 2%; }
+
+/* One item of the publication list. */
+.publication p { margin: 0.7em 0; }
+
+
+/* 6. Text ================================================================= */
+
+h1, h2, h3, h4, h5 { color: var(--heading); }
+
+h2 { font-size: 152%; }   /* section title, job position */
+h3 { font-size: 122%; }   /* company, institution */
+h4 { font-size: 132%; }   /* dates */
+h5 { font-size: 105%; }   /* anything extra */
+
 p { font-size: 105%; line-height: 18px; padding-right: 3em; }
-a { color: #d60000 }
+p.medium { font-size: 122%; line-height: 21px; }
+p.large { font-size: 144%; line-height: 24px; text-align: justify; }
+
+a { color: var(--link); }
 a:hover { text-decoration: none; }
+
 strong { font-weight: bold; }
-li { line-height: 24px; border-bottom: 1px solid #ccc; }
-p.medium { font-size: 122%; line-height: 21px; padding-right: 3em; }
-p.enlarge { font-size: 144%; padding-right: 3.0em; line-height: 24px; text-align: justify; }
-p.enlarge span { color: #000 }
-.contact-info h3 { margin-top: 7px; }
-/* .first h2 { font-style: italic; } */
-.last { border-bottom: 0 }
-.photo { float: right; margin: 0; padding: 0; }
+
+.author { font-weight: bold; }   /* the site owner, in a publication */
+.journal { font-style: italic; }
+.book { font-style: italic; }
+.abstract { font-style: italic; font-size: 90%; }
 
 
-/* //-- section styles -- */
+/* 7. Toggles ============================================================== */
 
-td, th { text-align: left; padding: 3px 0px 3px 0px; }
+/* <label class="toggle-label" for="ID">show more</label>
+   <input class="toggle" id="ID" type="checkbox">
+   <div class="more"> ...revealed when the box is ticked... </div> */
+.toggle { display: none; }
+.toggle-label { color: var(--link); cursor: pointer; }
+.more { display: none; margin-bottom: 1em; }
+.toggle:checked + .more { display: block; }
 
-a#pdf { display: block; float: left; background: #666; color: white; padding: 6px 38px 6px 38px; margin-top: 6px; margin-bottom: 6px; margin-right: 12px; text-decoration: none; text-align: right; }
-a#pdf:hover { background: #222; }
 
-#spc {display: block; color: #f5f5f5; }
+/* 8. Helpers ============================================================== */
 
-.gapbig    { position: relative; margin-bottom: 0.5em; padding-bottom: 0.5em; border: none; }
-.gap    { position: relative; margin-bottom: 0.2em; padding-bottom: 0.2em; border: none; }
+/* Empty <div>s used to push the next block down a little. */
+.gap { height: 0.4em; }
+.gap-big { height: 1em; }
 
-.uni    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
-.unil    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
+.button {
+    display: inline-block;
+    margin: 6px 12px 6px 0;
+    padding: 6px 38px;
+    background: var(--frame);
+    color: #fff;
+    text-decoration: none;
+}
+.button:hover { background: #222; }
 
-.uni p  { margin: 0.5em 0 0.5em 0; }
-.unil p  { margin: 0.5em 0 0.5em 0; }
-
-/* position */   .uni h2 { position: relative; margin-left: 19%; border: none; }
-/* company */    .uni h3 { position: relative; margin-left: 19%; margin-top: 0.5em; margin-bottom: 1em; border: none; }
-/* years */      .uni h4 { position: absolute; top: 0.5em; left: 0%; width: 17%; text-align: center; border: none; }
-/* additional */ .uni h5 { position: relative; margin-left: 19%; border: none; }
-
-/* position */   .unil h2 { position: relative; margin-left: 19%; border: none; }
-/* company */    .unil h3 { position: relative; margin-left: 19%; margin-top: 0.5em; margin-bottom: 1em; border: none; }
-/* years */      .unil h4 { position: absolute; top: 0.5em; left: 0%; width: 17%; text-align: center; border: none; }
-/* additional */ .unil h5 { position: relative; margin-left: 19%; border: none; }
-
-.uni-noR    { position: relative; margin-bottom: 1em; padding-bottom: 1em; border-bottom: 1px solid #ccc; }
-.uni-noR h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em; }
-.uni-noR p  { margin: 0.5em 0 0.5em 0; }
-.unil-noR    { position: relative; margin-bottom: 0; padding-bottom: 0; border: none; }
-.unil-noR h3 { position: relative; margin-top: 0.5em; margin-bottom: 0.5em; margin-right: 0.5em; }
-.unil-noR p  { margin: 0.5em 0 0.5em 0; }
-
-.uniList    { position: relative; margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-.uniList p  { margin: 0.7em 0 0.7em 0; }
-.uniBook    { position: relative; margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-.uniBook p  { margin: 0.5em 0 0.5em 2%; }
-
-.unih    { display: none; position: relative; margin-bottom: 1em; padding-bottom: 0em; border-bottom: none; }
-#trig_exp1:checked + .unih  { display: block; }
-#trig_exp1 { display: none; }
-#trig_proj:checked + .unih  { display: block; }
-#trig_proj { display: none; }
-#trig_cert:checked + .unih  { display: block; }
-#trig_cert { display: none; }
-#trig_art:checked + .unih  { display: block; }
-#trig_art { display: none; }
-#trig_conf:checked + .unih  { display: block; }
-#trig_conf { display: none; }
-#trig_book:checked + .unih  { display: block; }
-#trig_book { display: none; }
-
-.skills { width: 32%; float: left; margin-top: -1em; }
-.skills li { margin-top: 1em; font-size: 122%; }
-.talent { width: 32%; float: left; }
+/* Three-up lists of skills. */
+.skills, .talent { float: left; width: 32%; }
+.skills { margin-top: -1em; }
+.skills li { margin-top: 1em; font-size: 122%; line-height: 24px; border-bottom: 1px solid var(--line); }
+.skills li.last { border-bottom: 0; }
 .talent h2 { margin-bottom: 6px; }
 
-span.auth { font-weight: bold; } /* text-decoration: underline; */
-span.jour { font-style: italic; }
-span.abs  { font-style: italic; font-size: 90%; }
-span.book { font-style: italic; }
 
-#srt-ttab { margin-bottom: 100px; text-align: center;  }
-#srt-ttab img.last { margin-top: 20px }
+/* 9. Small screens ======================================================== */
 
-/* --// override to force 1/8th width grids -- */
-.yui-gf .yui-u{width: 80.2%;}
-.yui-gf div.first{width: 12.3%;}
+@media (max-width: 720px) {
+    .page { margin: 0 auto; padding: 1em; }
+
+    /* Stack every side-by-side pair. */
+    .profile, .section { display: block; }
+    .profile-photo { width: 9em; margin-bottom: 1em; }
+    .section-title { margin-bottom: 0.5em; }
+
+    .page-header h1 { font-size: 28px; letter-spacing: 1px; }
+
+    p { padding-right: 0; }
+
+    /* No room for a date column: put the dates back above the text. */
+    .entry.dated h2,
+    .entry.dated h3,
+    .entry.dated h5 { margin-left: 0; }
+    .entry.dated h4 { position: static; width: auto; text-align: left; }
+
+    .skills, .talent { float: none; width: auto; }
+}
