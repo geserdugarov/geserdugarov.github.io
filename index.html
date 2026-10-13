@@ -9,7 +9,7 @@
 
     <meta name="keywords" content="Java, Python, SQL, Scala, PostgreSQL, Parquet, Apache Hudi, Apache Spark,
                                    Apache Flink, Lance, Ray, distributed caching, vector search, ANN indexing,
-                                   performance engineering, Codex, Claude Code, multi-agent orchestration" />
+                                   performance engineering, Codex, Claude Code, Antigravity, Poetry, multi-agent orchestration" />
     <meta name="description" content="Software engineer building petabyte-scale lakehouse and AI data infrastructure at Huawei Cloud,
                                       with 50 merged Apache Hudi PRs and three merged Lance PRs." />
 
@@ -83,9 +83,11 @@
                     data transfer by 29&ndash;36%. Current work includes a two-tier distributed cache for Lance/Ray
                     and a query-adaptive, incrementally updatable ANN index targeting tens of billions of vectors.
                     Creator and operator of open-source
-                    <a href="https://github.com/chippingway/orchestrator/"
+                    <a href="https://github.com/chippingway/chipping-orchestrator/"
                        target="_blank">AI developer tooling</a>,
-                    with 8,400+ agent runs recorded across 15 repositories.
+                    <a href="https://pypi.org/project/chipping-orchestrator/"
+                       target="_blank">published on PyPI</a>
+                    with independent review and verification evidence.
                 </p>
                 <!--<div class="gap-big"></div>-->
                 <!--Personal mission: "Living a balanced life. Helping professionals work smarter, not harder, by creating automated systems for their routines."-->
@@ -169,13 +171,14 @@
                 <div class="gap-big"></div>
                 <p class="medium">
                     <strong>AI developer tooling:</strong>
-                    Codex, Claude Code, multi-agent orchestration, task decomposition, human-in-the-loop (HITL) workflows,
-                    durable state/recovery, run budgets, trajectory tracing, cost analytics
+                    Codex, Claude Code, Antigravity, multi-agent orchestration, task decomposition,
+                    human-in-the-loop (HITL) workflows, verification evidence, durable state/recovery,
+                    run budgets, trajectory tracing, cost analytics
                 </p>
                 <div class="gap-big"></div>
                 <p class="medium">
                     <strong>Engineering delivery:</strong>
-                    Technical designs/RFCs, automated testing, CI/release engineering, Maven, Docker, Linux
+                    Technical designs/RFCs, automated testing, CI/release engineering, Maven, Poetry, Docker, Linux
                 </p>
             </div>
         </div>
@@ -294,25 +297,44 @@
             <div class="section-body">
                 <div class="entry">
                     <p class="large">
-                        <a href="https://github.com/chippingway/orchestrator/"
+                        <a href="https://github.com/chippingway/chipping-orchestrator/"
                            target="_blank">chipping-orchestrator</a>
                         &ndash; Creator &amp; Maintainer | Apr 2026 &ndash; Present
                     </p>
-                    <p>• Designed and shipped a Python issue-to-PR platform using Codex and Claude Code, with task
-                         decomposition, dependency-aware scheduling, isolated git worktrees, automated verification,
-                         independent review, and human-controlled merge.</p>
-                    <p>• Built GitHub-persisted workflow state, pause/resume, credential isolation, and crash recovery for
-                         interrupted rebases and squashes. Added cumulative PR-size limits and per-issue lifetime run
+                    <p>• Designed and shipped a Python issue-to-PR platform using Codex, Claude Code, and Antigravity,
+                         with task decomposition, dependency-aware scheduling, isolated git worktrees, automated
+                         verification, independent review, and human-controlled merge.</p>
+                    <p>• Added versioned developer reports and verification artifacts; bound reviewer approval to the
+                         current PR revision, requirements, and report, requiring passing evidence for every configured
+                         verification command.</p>
+                    <p>• Built GitHub-visible workflow state with host-local coordination, pause/resume, trusted-comment
+                         filtering, and interrupted-run recovery. Added cumulative PR-size limits and per-issue lifetime run
                          budgets, with explicit human authorization for oversized changes.</p>
                     <p>• Added trajectory tracing and PostgreSQL/Streamlit dashboards for token usage, cost, and workflow
-                         outcomes. Shipped
-                         <a href="https://github.com/chippingway/orchestrator/releases"
-                            target="_blank">14 releases</a>
+                         outcomes. Operated the platform across 15 repositories in personal use, recording 8,400+ agent
+                         runs, including 2,700+ independent review-agent runs.</p>
+                    <p>• Shipped
+                         <a href="https://github.com/chippingway/chipping-orchestrator/releases"
+                            target="_blank">15 GitHub releases</a>
                          through
-                         <a href="https://github.com/chippingway/orchestrator/releases/tag/v0.12.0"
-                            target="_blank">v0.12.0</a>
-                         and operated the platform across 15 repositories, recording 8,400+ agent runs, including
-                         2,700+ independent review-agent runs.</p>
+                         <a href="https://github.com/chippingway/chipping-orchestrator/releases/tag/v0.13.0"
+                            target="_blank">v0.13.0</a>
+                         (6 Oct 2026), also the first
+                         <a href="https://pypi.org/project/chipping-orchestrator/"
+                            target="_blank">PyPI package</a>.
+                         Added Poetry packaging,
+                         <a href="https://chippingway.github.io/chipping-orchestrator/"
+                            target="_blank">published documentation</a>,
+                         and CI on Python 3.12&ndash;3.14.</p>
+                    <p>• As of 13 Oct 2026: maintained the project through
+                         <a href="https://github.com/chippingway/chipping-orchestrator/pulls?q=is%3Apr+is%3Amerged"
+                            target="_blank">1,068 merged PRs</a>;
+                         achieved an
+                         <a href="https://scorecard.dev/viewer/?uri=github.com/chippingway/chipping-orchestrator"
+                            target="_blank">OpenSSF Scorecard of 8.6/10</a>
+                         and an
+                         <a href="https://www.bestpractices.dev/projects/14235"
+                            target="_blank">OpenSSF Best Practices Passing badge</a>.</p>
                 </div>
             </div>
         </div>
